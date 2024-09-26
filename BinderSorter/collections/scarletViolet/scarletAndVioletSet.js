@@ -18,10 +18,11 @@ cards.forEach(function(card){
     
     img.style.width = '200px'; // Set width
     img.style.height = '280px'; // Set height
+    img.id = 'SVCard' + cardNum;
     
     // Append the image to the image container
     const textNode = document.createTextNode(cardNum);
-    document.getElementById('imageContainer').appendChild(textNode);
+    //document.getElementById('imageContainer').appendChild(textNode);
     document.getElementById('imageContainer').appendChild(img);
 
     cardNum++;
