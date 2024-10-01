@@ -11,6 +11,9 @@ for(let x = 1; x < 259; x++){
     img.style.width = '200px';
     img.style.height = '280px';
     img.id = 'SVCard' + cardNum;
+    img.onclick = function() {
+        cardClicked(x);
+    }
     
     const textNode = document.createTextNode(cardNum);
     //document.getElementById('imageContainer').appendChild(textNode);
@@ -18,6 +21,10 @@ for(let x = 1; x < 259; x++){
 
     cardNum++;
     
+}
+
+function cardClicked(idNum){
+    window.location.href = 'SVCards/SVCardPage' + idNum + '.html';
 }
 
 
